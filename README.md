@@ -1,4 +1,5 @@
 # ProofPing: Decentralized Proof of Attendance 🎟️
+![ProofPing Logo](./src/proofping_frontend/public/images/proofping-logo.png)
 
 Welcome to **ProofPing** — a simple yet powerful decentralized **Proof of Attendance** solution built on the **Internet Computer (ICP)**. ProofPing enables event organizers to securely record and verify participants' attendance on the blockchain.  
 
