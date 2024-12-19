@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Owner</title>
+    <link rel="icon" href="../img/logo/logo.png">
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="w-full h-max flex gap-8 pl-8 pt-7 items-center fixed">
+        <a href="/" class="w-max h-max flex bg-[#AAFF00] p-2 rounded-full border border-black">
+            <img src="../img/icons/chevron-left-regular-24.png" alt="arrow left" class="w-8 h-auto">
+        </a>
+        <div class="h-full w-max flex items-center">
+            <p class="text-lg">Buat Event /</p>
+        </div>
+    </header>
+
+    <main class="w-full h-screen flex justify-center items-center">
+        <section class="w-1/2 h-max flex flex-col p-10 items-center text-center bg-[#F8F8FF] border border-[#C6D0FF] rounded-3xl">
+            <div class="">
+                <h1 class="text-3xl font-bold mb-3 ">Buat Event Sebagai Owner</h1>
+                <p class="text-lg">Mari buat acara bersama agar lebih menyenangkan!</p>
+            </div>
+            <form class="flex flex-col text-start ">
+                <label for="nama_event" class="text-xl font-medium mt-8 mb-3">Nama Event:</label>
+                <input type="text" placeholder="eg: Diddy Party" name="event" id="event" class="w-[35rem] h-10 p-5 border-2 border-black rounded-md shadow-[5px_5px_black] text-lg focus:outline-none focus:shadow-none focus:translate-x-[5px] focus:translate-y-[5px]">
+                <label for="nama_peserta" class="text-xl font-medium mt-8 mb-3">Nama Owner:</label>
+                <input type="text" placeholder="eg: Jhon Dhoe" name="peserta" id="peserta" class="w-[35rem] h-10 p-5 border-2 border-black rounded-md shadow-[5px_5px_black] text-lg focus:outline-none focus:shadow-none focus:translate-x-[5px] focus:translate-y-[5px]">
+                <div class="w-full flex justify-center">
+                    <button class="mt-20 flex items-center text-xl font-bold bg-[#AAFF00] gap-2 px-5 py-2 rounded-full border border-black shadow-[3px_3px_black] active:translate-x-[3px] active:translate-y-[3px] active:shadow-none">Buat Event <img src="img/icons/plus-regular-24.png" alt="arrow" class="w-6 p-1 bg-black rounded-full"></button>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
