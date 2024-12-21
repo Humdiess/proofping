@@ -8,10 +8,6 @@
     src: url("../public/fonts/Public_Sans/PublicSans-VariableFont_wght.ttf") format('ttf');
 }
 
-header,body{
-    font-family: 'Public-sans';
-}
-
 .judul{
-    font-family: 'Coolvetica';
+    font-family: 'Public-sans';
 }
