@@ -1,30 +1,24 @@
-import { useState } from 'react';
-import { proofping_backend } from 'declarations/proofping_backend';
+import React from 'react';
+import Peserta from './pages/Participant';
+import Pemilik from './pages/EventOwner';
+import LandingPage from './pages/LandingPage';
+import { BrowserRouter as Router, Routes, Route } from 'react-router';
+import Home from './pages/AppOption';
+import NotFoundPage from './pages/404';
 
 function App() {
-  const [greeting, setGreeting] = useState('');
-
-  function handleSubmit(event) {
-    event.preventDefault();
-    const name = event.target.elements.name.value;
-    proofping_backend.greet(name).then((greeting) => {
-      setGreeting(greeting);
-    });
-    return false;
-  }
 
   return (
-    <main>
-      <img src="/logo2.svg" alt="DFINITY logo" />
-      <br />
-      <br />
-      <form action="#" onSubmit={handleSubmit}>
-        <label htmlFor="name">Enter your name: &nbsp;</label>
-        <input id="name" alt="Name" type="text" />
-        <button type="submit">Click Me!</button>
-      </form>
-      <section id="greeting">{greeting}</section>
-    </main>
+    <Router>
+      <Routes>
+        <Route path='/' element={<LandingPage />} />
+        <Route path='/app' element={<Home />} />
+        <Route path='/app/create-event' element={<Pemilik />} />
+        <Route path='/app/attend-event' element={<Peserta />} />
+        {/* not found */}
+        <Route path='/*' element={<NotFoundPage />} />
+      </Routes>
+    </Router>
   );
 }
 

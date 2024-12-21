@@ -1,0 +1,17 @@
+@font-face {
+    font-family: Coolvetica;
+    src: url("../public/fonts/coolvetica/Coolvetica\ Rg.otf") format('otf');
+}
+
+@font-face {
+    font-family: Public-sans;
+    src: url("../public/fonts/Public_Sans/PublicSans-VariableFont_wght.ttf") format('ttf');
+}
+
+header,body{
+    font-family: 'Public-sans';
+}
+
+.judul{
+    font-family: 'Coolvetica';
+}
