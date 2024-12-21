@@ -45,6 +45,10 @@ function Home() {
           </div>
         </div>
       </div>
+      <footer className="mt-8 bg-black text-white p-4 rounded-lg">
+        <img src="/images/icp-logo.svg" alt="ICP Logo" className="w-32 mx-auto" />
+        <p className="text-center text-gray-600 mt-2">Powered by ICP</p>
+      </footer>
     </div>
   );
 }
