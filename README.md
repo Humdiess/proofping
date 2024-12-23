@@ -109,9 +109,3 @@ Contributions are welcome! Please follow these steps:
 
 ## 🙏 Acknowledgments
 Special thanks to the **DFINITY Foundation** for creating the Internet Computer platform.
-
----
-
-## 📢 License
-This project is licensed under the MIT License. See the `LICENSE` file for details.
-
